@@ -1,5 +1,5 @@
 {
-  "name": "humanmade/simple-rating",
+  "name": "humanmade/hm-simple-rating",
   "description": "A small widget that allows visitors to select thumbs up/down on posts or terms.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0+",
