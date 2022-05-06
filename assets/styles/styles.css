@@ -1,0 +1,46 @@
+/*
+ * Default styles for hm-simple widget.
+ */
+
+.hm-simple-rating__widget {
+	display: flex;
+}
+
+.hm-simple-rating__rate-button {
+	all: unset; /* Remove all button-specific styles. */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	cursor:  pointer;
+	padding: 0.25rem;
+}
+
+.hm-simple-rating__rate-button[disabled] {
+	/* Because we removed all normal button styles, we need to set our own disabled styles. */
+	filter: grayscale(100%);
+	cursor: not-allowed;
+}
+
+.hm-simple-rating__icon {
+	width: 3em;
+	height: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background-color: white;
+	border: 2px solid var( --default-accent-color, #d24632 );
+}
+
+.hm-simple-rating__text {
+	/* This text should be hidden from everyone but screen readers. */
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
